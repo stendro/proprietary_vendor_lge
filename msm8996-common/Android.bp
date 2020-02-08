@@ -255,7 +255,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/lib/libqct_resampler.so"],
+			srcs: ["proprietary/system/lib/libqct_resampler.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -284,7 +284,7 @@ cc_prebuilt_library_shared {
 android_app_import {
 	name: "QtiTelephonyService",
 	owner: "lge",
-	apk: "proprietary/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "proprietary/system/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -294,7 +294,7 @@ android_app_import {
 android_app_import {
 	name: "vzw_msdc_api",
 	owner: "lge",
-	apk: "proprietary/app/vzw_msdc_api/vzw_msdc_api.apk",
+	apk: "proprietary/system/app/vzw_msdc_api/vzw_msdc_api.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -304,7 +304,7 @@ android_app_import {
 android_app_import {
 	name: "CNEService",
 	owner: "lge",
-	apk: "proprietary/priv-app/CNEService/CNEService.apk",
+	apk: "proprietary/system/priv-app/CNEService/CNEService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -315,7 +315,7 @@ android_app_import {
 android_app_import {
 	name: "VZWAPNService",
 	owner: "lge",
-	apk: "proprietary/priv-app/VZWAPNService/VZWAPNService.apk",
+	apk: "proprietary/system/priv-app/VZWAPNService/VZWAPNService.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -326,7 +326,7 @@ android_app_import {
 android_app_import {
 	name: "VZWAVS",
 	owner: "lge",
-	apk: "proprietary/priv-app/VZWAVS/VZWAVS.apk",
+	apk: "proprietary/system/priv-app/VZWAVS/VZWAVS.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -337,7 +337,7 @@ android_app_import {
 android_app_import {
 	name: "VzwLcSilent",
 	owner: "lge",
-	apk: "proprietary/priv-app/VzwLcSilent/VzwLcSilent.apk",
+	apk: "proprietary/system/priv-app/VzwLcSilent/VzwLcSilent.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -348,7 +348,7 @@ android_app_import {
 android_app_import {
 	name: "VzwOmaTrigger",
 	owner: "lge",
-	apk: "proprietary/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk",
+	apk: "proprietary/system/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -359,7 +359,7 @@ android_app_import {
 android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "lge",
-	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "proprietary/system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -370,24 +370,24 @@ android_app_import {
 dex_import {
 	name: "QtiTelephonyServicelibrary",
 	owner: "lge",
-	jars: ["proprietary/framework/QtiTelephonyServicelibrary.jar"],
+	jars: ["proprietary/system/framework/QtiTelephonyServicelibrary.jar"],
 }
 
 dex_import {
 	name: "VerizonUnifiedSettings",
 	owner: "lge",
-	jars: ["proprietary/framework/VerizonUnifiedSettings.jar"],
+	jars: ["proprietary/system/framework/VerizonUnifiedSettings.jar"],
 }
 
 dex_import {
 	name: "qcrilhook",
 	owner: "lge",
-	jars: ["proprietary/framework/qcrilhook.jar"],
+	jars: ["proprietary/system/framework/qcrilhook.jar"],
 }
 
 dex_import {
 	name: "qti-telephony-common",
 	owner: "lge",
-	jars: ["proprietary/framework/qti-telephony-common.jar"],
+	jars: ["proprietary/system/framework/qti-telephony-common.jar"],
 }
 
