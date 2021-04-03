@@ -26,16 +26,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "VZWAPNLib",
-	owner: "lge",
-	apk: "proprietary/app/VZWAPNLib/VZWAPNLib.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "vzw_msdc_api",
 	owner: "lge",
 	apk: "proprietary/app/vzw_msdc_api/vzw_msdc_api.apk",
@@ -43,28 +33,6 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-}
-
-android_app_import {
-	name: "SprintDM",
-	owner: "lge",
-	apk: "proprietary/priv-app/SprintDM/SprintDM.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "SprintHM",
-	owner: "lge",
-	apk: "proprietary/priv-app/SprintHM/SprintHM.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
 }
 
 android_app_import {
