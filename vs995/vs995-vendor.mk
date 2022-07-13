@@ -6,7 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lge/vs995
 
 PRODUCT_COPY_FILES += \
-    vendor/lge/vs995/proprietary/vendor/firmware/BCM4358A3.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/BCM4358A3.hcd \
+    vendor/lge/vs995/proprietary/vendor/firmware/BCM4358A3.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/BCM43xx.hcd \
     vendor/lge/vs995/proprietary/vendor/firmware/fw_bcmdhd.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd.bin \
     vendor/lge/vs995/proprietary/vendor/firmware/fw_bcmdhd_apsta.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd_apsta.bin \
     vendor/lge/vs995/proprietary/vendor/firmware/fw_bcmdhd_mfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd_mfg.bin
