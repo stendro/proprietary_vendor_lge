@@ -26,6 +26,28 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "HotwordEnrollmentOKGoogleWCD9335",
+	owner: "lge",
+	apk: "proprietary/priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "HotwordEnrollmentXGoogleWCD9335",
+	owner: "lge",
+	apk: "proprietary/priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "vzw_msdc_api",
 	owner: "lge",
 	apk: "proprietary/app/vzw_msdc_api/vzw_msdc_api.apk",
