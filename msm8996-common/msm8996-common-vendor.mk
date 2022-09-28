@@ -634,7 +634,6 @@ PRODUCT_PACKAGES += \
     fingerprint.msm8996 \
     gatekeeper.msm8996 \
     keystore.msm8996 \
-    libaudio_log_utils \
     libdsi_netctrl \
     libgpustats \
     libqmi_cci \

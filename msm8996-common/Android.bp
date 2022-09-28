@@ -168,26 +168,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libaudio_log_utils",
-	owner: "lge",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libaudio_log_utils.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libaudio_log_utils.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libdsi_netctrl",
 	owner: "lge",
 	strip: {
@@ -335,7 +315,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqct_resampler.so"],
+			srcs: ["proprietary/lib/libqct_resampler.so"],
 		},
 	},
 	compile_multilib: "32",
