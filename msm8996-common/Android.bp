@@ -168,26 +168,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libdsi_netctrl",
-	owner: "lge",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libdsi_netctrl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libdsi_netctrl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libgpustats",
 	owner: "lge",
 	strip: {
@@ -199,66 +179,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libgpustats.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqmi_cci",
-	owner: "lge",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqmi_cci.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqmi_cci.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqmi_common_so",
-	owner: "lge",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqmi_common_so.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqmi_common_so.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqmiservices",
-	owner: "lge",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqmiservices.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqmiservices.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -393,4 +313,3 @@ dex_import {
 	owner: "lge",
 	jars: ["proprietary/framework/qti-telephony-common.jar"],
 }
-
