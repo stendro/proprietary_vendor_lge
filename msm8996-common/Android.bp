@@ -65,66 +65,6 @@ android_app_import {
 	privileged: true,
 }
 
-android_app_import {
-	name: "vzw_msdc_api",
-	owner: "lge",
-	apk: "proprietary/app/vzw_msdc_api/vzw_msdc_api.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "VZWAPNService",
-	owner: "lge",
-	apk: "proprietary/priv-app/VZWAPNService/VZWAPNService.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "VZWAVS",
-	owner: "lge",
-	apk: "proprietary/priv-app/VZWAVS/VZWAVS.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "VzwLcSilent",
-	owner: "lge",
-	apk: "proprietary/priv-app/VzwLcSilent/VzwLcSilent.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "VzwOmaTrigger",
-	owner: "lge",
-	apk: "proprietary/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-dex_import {
-	name: "VerizonUnifiedSettings",
-	owner: "lge",
-	jars: ["proprietary/framework/VerizonUnifiedSettings.jar"],
-}
-
 cc_prebuilt_library_shared {
 	name: "gatekeeper.msm8996",
 	owner: "lge",
@@ -352,10 +292,64 @@ android_app_import {
 }
 
 android_app_import {
+	name: "vzw_msdc_api",
+	owner: "lge",
+	apk: "proprietary/app/vzw_msdc_api/vzw_msdc_api.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "CNEService",
 	owner: "lge",
 	apk: "proprietary/priv-app/CNEService/CNEService.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "VZWAPNService",
+	owner: "lge",
+	apk: "proprietary/priv-app/VZWAPNService/VZWAPNService.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "VZWAVS",
+	owner: "lge",
+	apk: "proprietary/priv-app/VZWAVS/VZWAVS.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "VzwLcSilent",
+	owner: "lge",
+	apk: "proprietary/priv-app/VzwLcSilent/VzwLcSilent.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "VzwOmaTrigger",
+	owner: "lge",
+	apk: "proprietary/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk",
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -377,6 +371,12 @@ dex_import {
 	name: "QtiTelephonyServicelibrary",
 	owner: "lge",
 	jars: ["proprietary/framework/QtiTelephonyServicelibrary.jar"],
+}
+
+dex_import {
+	name: "VerizonUnifiedSettings",
+	owner: "lge",
+	jars: ["proprietary/framework/VerizonUnifiedSettings.jar"],
 }
 
 dex_import {
